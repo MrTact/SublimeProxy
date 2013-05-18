@@ -1,0 +1,15 @@
+//
+//  AppDelegate.h
+//  SublimeProxy
+//
+//  Created by Tim Keating on 5/18/13.
+//  Copyright (c) 2013 Tim Keating. All rights reserved.
+//
+
+#import <Cocoa/Cocoa.h>
+
+@interface AppDelegate : NSObject <NSApplicationDelegate>
+
+@property (assign) IBOutlet NSWindow *window;
+
+@end
