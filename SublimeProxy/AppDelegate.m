@@ -12,7 +12,16 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    [[NSAppleEventManager sharedAppleEventManager]
+     setEventHandler:self andSelector:@selector(handleAppleEvent:withReplyEvent:)
+     forEventClass:'aevt' andEventID:'odoc'];
+}
+
+- (void)handleAppleEvent:(NSAppleEventDescriptor *)event withReplyEvent:(NSAppleEventDescriptor *)replyEvent
+{
+    NSLog(@"Event descriptor: %@", [event description]);
+    NSUInteger options = NSURLBookmarkResolutionWithoutMounting | NSURLBookmarkResolutionWithoutUI;
+    NSURL * url = [NSURL URLByResolvingBookmarkData:[event data] options:options relativeToURL:nil bookmarkDataIsStale:NULL error:NULL];
 }
 
 @end

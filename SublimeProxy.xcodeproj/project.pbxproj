@@ -12,7 +12,6 @@
 		102B54B21747CFD600977AEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 102B54B11747CFD600977AEA /* main.m */; };
 		102B54B61747CFD600977AEA /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 102B54B41747CFD600977AEA /* Credits.rtf */; };
 		102B54B91747CFD600977AEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 102B54B81747CFD600977AEA /* AppDelegate.m */; };
-		102B54BC1747CFD600977AEA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 102B54BA1747CFD600977AEA /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +27,6 @@
 		102B54B51747CFD600977AEA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		102B54B71747CFD600977AEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		102B54B81747CFD600977AEA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		102B54BB1747CFD600977AEA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +82,6 @@
 			children = (
 				102B54B71747CFD600977AEA /* AppDelegate.h */,
 				102B54B81747CFD600977AEA /* AppDelegate.m */,
-				102B54BA1747CFD600977AEA /* MainMenu.xib */,
 				102B54AC1747CFD600977AEA /* Supporting Files */,
 			);
 			path = SublimeProxy;
@@ -155,7 +152,6 @@
 			files = (
 				102B54B01747CFD600977AEA /* InfoPlist.strings in Resources */,
 				102B54B61747CFD600977AEA /* Credits.rtf in Resources */,
-				102B54BC1747CFD600977AEA /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,14 +184,6 @@
 				102B54B51747CFD600977AEA /* en */,
 			);
 			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		102B54BA1747CFD600977AEA /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				102B54BB1747CFD600977AEA /* en */,
-			);
-			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -303,6 +291,7 @@
 				102B54C11747CFD600977AEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
